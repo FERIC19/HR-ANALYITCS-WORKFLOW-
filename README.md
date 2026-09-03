@@ -1,5 +1,5 @@
 # HR Analytics Dashboard | Excel Project
-Headcount, Attrition & Compensation Insights | From Raw Employee Records to an Interactive HR Dashboard
+An end-to-end HR Analytics project that transforms raw employee data into meaningful workforce insights using data cleaning, Power Query, Power Pivot/DAX, and interactive visualizations
 
 ---
 
@@ -18,7 +18,10 @@ Headcount, Attrition & Compensation Insights | From Raw Employee Records to an I
 
 ## Project Overview
 
-This project analyzes workforce data for **311 employees** to uncover patterns in headcount, attrition, and compensation. Using Power Query and Power Pivot (DAX), raw employee records are turned into an interactive Excel dashboard giving real-time insight into who's active, who's leaving, and where — supporting faster, evidence-based HR decisions.
+## Project Overview
+
+This project analyzes **311 employee records** to uncover insights into workforce demographics, salary, employee performance, engagement, tenure, workforce growth, and employee attrition. Using **Microsoft Excel, Power Query, Power Pivot, and DAX**, raw HR data was transformed into a structured analytical model with calculated measures, PivotTables, and interactive visualizations. The final dashboard provides a clear overview of key HR metrics and helps identify workforce patterns and areas that may require management attention.
+
 
 ---
 
@@ -74,7 +77,8 @@ Rather than formula-driven worksheet columns, this workbook loads data straight 
 | `Average of Age` | Average employee age |
 | `Avg Engagement` | Average engagement survey score |
 
-> To view the DAX formula behind any measure: open `H_ANALYTICS.xlsx` → **Power Pivot tab → Manage** → select **Measures** in the grid.
+>📐 **To view the DAX formulas behind the measures:**  
+Open [H ANALYTICS.xlsx](./Data/H%20ANALYTICS.xlsx) → **Power Pivot** tab → **Manage** → **Measures** in the calculation area.
 
 - **13 PivotTables** feed **10 PivotCharts**, all connected to a Date-of-Hire timeline slicer.
 
@@ -87,9 +91,11 @@ The dashboard includes:
 - Headcount by month (line/bar)
 - Attrition by Department
 - Top 5 Managers with Highest Attrition Rate
-- Attrition by Performance Score
-- Employee by Sex (donut)
-- Performance by Sex
+- Employee Performance by Gender
+- Employees by Department
+- Attrition Rate by Marital ID
+- Employee by Age Group
+- Date-of-Hire timeline slicer.
 
 **Screenshot:**
 
@@ -113,15 +119,25 @@ The dashboard includes:
 - Prioritize retention initiatives in **Production**, since it accounts for the majority of both headcount and departures.
 - Review management practices and workload for **Webster Butler** and **Amy Dunn's** teams given above-average attrition under their reports.
 - Investigate the link between low performance scores and attrition to see whether it reflects a performance-management or an engagement issue.
-- Track engagement score alongside attrition rate over time to catch early warning signs before termination.
+- Track engagement score alongside attrition rate over time to catch early warning signs before termination
+* **Strengthen employee retention:** Investigate the major drivers of attrition and develop targeted retention strategies for high-turnover employee groups and departments.
+* **Improve employee engagement:** Use employee feedback, recognition, communication, and development opportunities to improve engagement and satisfaction.
+* **Enhance performance management:** Provide targeted training, mentoring, and follow-up support for employees requiring performance improvement.
+* **Optimize workforce planning:** Use employee growth, tenure, department, and attrition trends to support better staffing and recruitment decisions.
+* **Monitor management and departmental trends:** Regularly review employee performance and turnover patterns across departments and managers to identify areas requiring attention.
+* **Maintain continuous HR analytics:** Refresh the dataset and dashboard regularly to ensure management has current information for workforce decision-making.
+
 
 ---
 
 ## Future Work
 
-- Automate data refresh from a live HR source instead of a static extract.
-- Add a trend view of attrition rate over time (beyond the single YoY comparison).
-- Rebuild the dashboard in Power BI for web-based, interactive sharing.
+* **Migrate the dashboard to Power BI:** Rebuild and publish the Excel dashboard in Power BI for improved interactivity, sharing, and automated reporting.
+* **Develop predictive attrition analysis:** Build a predictive model to identify employees who may be at higher risk of leaving based on factors such as engagement, satisfaction, salary, tenure, performance, and department.
+* **Expand employee performance analysis:** Investigate the relationship between employee performance, engagement, satisfaction, and attrition to identify factors associated with employee retention and productivity.
+* **Automate data refresh:** Improve the Power Query workflow to support automated or more frequent updates as new employee records become available.
+* **Add advanced HR KPIs:** Incorporate additional metrics such as retention rate, absenteeism rate, average time to hire, employee satisfaction trends, and recruitment-source effectiveness.
+* **Expand time-based analysis:** Analyze workforce growth, hiring, and termination trends over longer periods to identify seasonal and long-term patterns.
 
 ---
 

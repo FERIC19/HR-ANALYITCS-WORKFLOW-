@@ -93,7 +93,7 @@ The dashboard includes:
 
 **Screenshot:**
 
-![Visuals dashboard](images/visuals_dashboard.png)
+![Visuals dashboard](images/Visuals_dashboard.png)
 
 ---
 
